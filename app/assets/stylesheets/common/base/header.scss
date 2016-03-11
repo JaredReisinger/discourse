@@ -13,17 +13,12 @@
 
   .d-header-table {
     display: table;
+    table-layout: fixed; /* or else long topic titles break everything */
     width: 100%;
     margin: 8px auto;
   }
-  .d-header-table.wrap {
+  .d-header-wrap {
     padding: 0;
-  }
-  .d-header-row {
-    display: table-row;
-  }
-  .contents {
-    width: 100%;
   }
   .title, .extra-info-cell, .panel {
     display: table-cell;
@@ -32,11 +27,13 @@
     vertical-align: middle;
     padding-left: 8px;
     overflow: hidden;
+    width: 65%;
   }
   .extra-info-cell {
     vertical-align: middle;
   }
   .panel {
+    width:35%;
     text-align: right;
     position: relative;
     .menu-panel {
@@ -44,13 +41,19 @@
     }
   }
 
+  .not-minimized {
+    .title { width: 65%; }
+    .panel { width: 35%; }
+  }
+  .minimized {
+    .title           { width: 1%; vertical-align: baseline; }
+    .extra-info-cell { width: 64%; }
+    .panel           { width: 35%; }
+  }
+
   .d-header-nav {
     position: relative;
     float: right;
-  }
-
-  .contents {
-    margin: 8px 0;
   }
 
   #site-logo {

@@ -1,5 +1,5 @@
-<div class='wrap d-header-table'>
-  <div class='contents d-header-row clearfix'>
+<div {{bind-attr class=":wrap :d-header-wrap showExtraInfo:minimized:not-minimized"}}>
+  <div class='d-header-table contents clearfix'>
     {{home-logo minimized=showExtraInfo}}
     {{plugin-outlet "header-after-home-logo"}}
 
