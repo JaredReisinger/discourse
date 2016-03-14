@@ -11,8 +11,10 @@
     padding:8px;
     font-size: 2.1em;
   }
-  .title.minimized {
-    width: 40px;
+  .minimized {
+    .title           { width: 40px; vertical-align: baseline; }
+    .extra-info-cell { width: 64%; }
+    .panel           { width: 35%; }
   }
 }
 

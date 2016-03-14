@@ -17,6 +17,9 @@
     width: 100%;
     margin: 8px auto;
   }
+  .d-header-row {
+    display: table-header-group; /* table-row doesn't work on mobile */
+  }
   .d-header-wrap {
     padding: 0;
   }
@@ -46,11 +49,7 @@
     .title { width: 65%; }
     .panel { width: 35%; }
   }
-  .minimized {
-    .title           { width: 1%; vertical-align: baseline; }
-    .extra-info-cell { width: 64%; }
-    .panel           { width: 35%; }
-  }
+  /* .minimized is different for desktop and mobile */
 
   .d-header-nav {
     position: relative;
